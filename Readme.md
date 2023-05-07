@@ -1,7 +1,9 @@
 # Proyecto de prueba de Pytest-Selenium 🐍 🚀🛸
 
-![](C:\Users\marti\OneDrive\Escritorio\Null\Social Club\Python\pytest -selenium-python.png)
+<img src="C:\Users\marti\OneDrive\Escritorio\Null\Social Club\Python\pytest -selenium-python.png" title="Tecnologias"/>
 
+# Ver en el IDE de preferencia
+# Hecho en Pycharm
 # Comandos 👨 🏻 ‍💻
 
 # pytest nombreArchivo.py
