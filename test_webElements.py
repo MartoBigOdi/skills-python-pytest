@@ -37,6 +37,8 @@ try:
      pasa = True
      print(check)
 
+
+     @pytest.mark.front
      @pytest.mark.ejecutar
      # flow testing
      def test_flow():
