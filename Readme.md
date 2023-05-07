@@ -1,6 +1,6 @@
 # Proyecto de prueba de Pytest-Selenium 🐍 🚀🛸
 
-<img src="C:\Users\marti\OneDrive\Escritorio\Null\Social Club\Python\pytest -selenium-python.png" title="Tecnologias"/>
+![](C:\Users\marti\OneDrive\Escritorio\Null\Social Club\Python\pytest -selenium-python.png)
 
 # Comandos 👨 🏻 ‍💻
 
