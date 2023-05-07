@@ -17,4 +17,7 @@
 
 <img src="C:\Users\marti\OneDrive\Escritorio\Null\Social Club\Python\error como se ve, solo se tiene que modificar el expected.JPG"/>
 
+# Generamos reportes con el siguiente comando, por el momento solo generamos de los test que encuentra en el archivo que le indicamos
+
+# pytest test_webElements.py --html=ReporteTests.html ----> En este archivo solo existe un test de front
 
