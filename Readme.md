@@ -7,12 +7,14 @@
 > -  Instalar con pip
 > 
 
-## IDE Pycharm
+## IDE Pycharm 
+<img height="50" src="C:\Users\marti\OneDrive\Escritorio\Null\Social Club\Python\basicsSkills\img_readme\pycharm.png" width="50"/>
 
 > #### Comandos 👨 🏻 ‍💻
 >
 > - pytest nombreArchivo.py
 > - pytest --collect-only ----> Para correr los archivos que empiecen con "test_" dentro del proyecto.
+> - pytest -k 'test_first_url' --collect-only ----> Corremos solo el mark para esa funcion.
 > - pytest -k asdict or defaults' --collect-only ----> Ejecuta solamente lo que le enviamos por parametro para elegir las funciones de test
 > - pytest -v -m ejecutar ----> ejecutamos test por tags, si no son tags de pytest y son propias de nuestro sistema, personalizadas guardar en el pytest.ini
 > 
@@ -31,5 +33,5 @@
 > #### Archivos 💾
 >
 > - Para que ejecute los test y asi mismo pytest pueda identificar el tag/mark el archivo debe tener un nombre valido.
-> - ejemplo test_elemento_front.py; test_front_venta.py; test_back_venta.py.
+> - ejemplo test_elementofront.py; test_frontventa.py; test_backventa.py.
 > 
