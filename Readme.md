@@ -1,4 +1,4 @@
-# Proyecto de prueba de Pytest-Selenium 🐍 🚀🛸
+# Proyecto, Framework de Pytest-Selenium 🐍 🚀🛸
 
 <img src="img_readme/pytest -selenium-python.png"/>
 
