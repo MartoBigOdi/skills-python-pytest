@@ -25,14 +25,23 @@ try:
     Alert(driver).accept()
     # otra forma es directamente desde driver e ir ingresando a sus clases para buscar el metodo accept()
     # driver.switch_to.alert.accept()
-    # tambien podemos hascer dismiss() al alert
-    # Alert(driver).dismiss()
     time.sleep(2)
-
+    buttonAlert.click()
+    # tambien podemos hascer dismiss() al alert
+    Alert(driver).dismiss()
+    time.sleep(2)
+    buttonAlert.click()
+    txt_alert = driver.switch_to.alert.text
+    time.sleep(2)
 
     @pytest.mark.alert
     def test_buttonAlert():
         assert buttonAlert is not None
+
+    @pytest.mark.alert
+    def test_txt_alert():
+        expected = "I am a JS Alert"
+        assert txt_alert == expected
 
 finally:
   driver.quit()
