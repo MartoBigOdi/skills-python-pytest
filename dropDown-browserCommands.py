@@ -4,6 +4,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from utility import tools
+import pytest
 
 
 #setting driver
@@ -17,5 +18,11 @@ try:
    select = driver.find_element(By.XPATH,'//*[@id="dropdown"]')
    tools.highlight(select)
    print("Cerrando Browser")
+
+
+   @pytest.mark.ejecutar
+   def test_selectElementTrue():
+       assert select != None
+
 finally:
     driver.quit()
