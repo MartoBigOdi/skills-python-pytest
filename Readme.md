@@ -15,7 +15,7 @@
 > - pytest --collect-only ----> Para correr los archivos que empiecen con "test_" dentro del proyecto.
 > - pytest -k asdict or defaults' --collect-only ----> Ejecuta solamente lo que le enviamos por parametro para elegir las funciones de test
 > - pytest -v -m ejecutar ----> ejecutamos test por tags, si no son tags de pytest y son propias de nuestro sistema, personalizadas guardar en el pytest.ini
-> -  
+> 
 <img src="C:\Users\marti\OneDrive\Escritorio\Null\Social Club\Python\basicsSkills\img_readme\marcas_propias_archivo_ini.JPG"/>
 <img src="C:\Users\marti\OneDrive\Escritorio\Null\Social Club\Python\basicsSkills\img_readme\marca sobre la funcion de test.JPG"/>
 <img src="C:\Users\marti\OneDrive\Escritorio\Null\Social Club\Python\basicsSkills\img_readme\error como se ve, solo se tiene que modificar el expected.JPG"/>
@@ -28,3 +28,8 @@
 
 <img src="C:\Users\marti\OneDrive\Escritorio\Null\Social Club\Python\basicsSkills\img_readme\reporte html pytest.JPG"/>
 
+> #### Archivos 💾
+>
+> - Para que ejecute los test y asi mismo pytest pueda identificar el tag/mark el archivo debe tener un nombre valido.
+> - ejemplo test_elemento_front.py; test_front_venta.py; test_back_venta.py.
+> 
