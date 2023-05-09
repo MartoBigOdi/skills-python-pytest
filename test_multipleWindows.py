@@ -49,6 +49,4 @@ try:
         assert txt_h3 == expected
 
 finally:
-  driver.switch_to.window(parent)
-  time.sleep(2)
   driver.quit()
