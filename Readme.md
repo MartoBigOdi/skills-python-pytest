@@ -16,7 +16,8 @@
 > - pytest -k 'test_first_url' --collect-only ----> Corremos solo el mark para esa funcion.
 > - pytest -k asdict or defaults' --collect-only ----> Ejecuta solamente lo que le enviamos por parametro para elegir las funciones de test.
 > - pytest -v -m ejecutar ----> ejecutamos test por tags, si no son tags de pytest y son propias de nuestro sistema, personalizadas guardar en el pytest.ini.
-> - Para hacer skip de algun test solo le agreagamos la marca @pytest.mark.skip(reason='razon por la que hacemos skip a ese test').
+> - @pytest.mark.skip(reason='razon por la que hacemos skip a ese test') -----> Para hacer skip de algun test solo le agreagamos la marca.
+> - @pytest.mark.xfail(reason='falla porque necesitamos probar el xFail()') -----> Lo mismo podemos hacer para que un test falle porque necesitamos eso particular para alguna prueba. 
 > 
 
 ## IMGS de referencia
