@@ -15,26 +15,28 @@ pasa = False
 chr_options = Options()
 chr_options.add_experimental_option("detach", True)
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chr_options)
-driver.get("https://the-internet.herokuapp.com/checkboxes")
+driver.get("https://demo.automationtesting.in/Register.html")
 driver.maximize_window()
 
 try:
 
-    tools.highlight(driver.find_element(By.XPATH, '//*[@id="checkboxes"]'))
-    checkBox1 = driver.find_element(By.XPATH,"//*[@id='checkboxes']/input[1]")
+    tools.highlight(driver.find_element(By.XPATH, '//form[@id="basicBootstrapForm"]/div[6]'))
+    checkBox1 = driver.find_element(By.XPATH, "//*[@id='checkbox1']")
     checkBox1.click()
-    checkBox2 = driver.find_element(By.XPATH,"//*[@id='checkboxes']/input[2]")
+    checkBox2 = driver.find_element(By.XPATH, "//*[@id='checkbox2']")
     checkBox2.click()
     tools.highlight(checkBox1)
+    checkBox3 = driver.find_element(By.XPATH, "//*[@id='checkbox3']")
+    checkBox3.click()
     time.sleep(3)
 
     # guardamos en una lista los dos elementos para recorrerlos y hacer el click en ellos
-    checkBoxes = [checkBox1, checkBox2]
+    checkBoxes = [checkBox1, checkBox2, checkBox3]
     for check in checkBoxes:
      check.click()
+     pasa = True if check.get_attribute('id') else False
      print(check.get_attribute('id'))
      tools.highlight(check)
-     pasa = True
      print(check)
 
 

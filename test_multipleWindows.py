@@ -13,13 +13,13 @@ pasa = False
 chr_options = Options()
 chr_options.add_experimental_option("detach", True)
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chr_options)
-driver.get("https://the-internet.herokuapp.com/windows")
+driver.get("https://demo.automationtesting.in/Windows.html")
 driver.maximize_window()
 
 try:
 
     # Haacemos click para que se abra la nueva pestaña del navegador
-    buttonNewWindows = driver.find_element(By.XPATH,"//a[contains(text(),'Click Here')]")
+    buttonNewWindows = driver.find_element(By.XPATH,"//button[contains(text(),'click')]")
     tools.highlight(buttonNewWindows)
     buttonNewWindows.click()
     time.sleep(2)
@@ -35,18 +35,18 @@ try:
     # espera en la nueva ventana
     time.sleep(2)
 
-    h3_nuevaVentana = driver.find_element(By.XPATH, "//h3[contains(text(),'New Window')]")
-    tools.highlight(h3_nuevaVentana)
-    txt_h3 = h3_nuevaVentana.text
+    h1_nuevaVentana = driver.find_element(By.XPATH, "//*[contains(text(),'Selenium automates browsers')]")
+    tools.highlight(h1_nuevaVentana)
+    txt_h1 = h1_nuevaVentana.text
 
     def test_pasaTrue():
         assert pasa == True
 
     # falla para mostrar el error de la assertion, para hacerlo solo descomenta el primer str expected.
-    def test_txt_h3():
+    def test_txt_h1():
        # expected = "New Windo"
-        expected = "New Window"
-        assert txt_h3 == expected
+        expected = "Selenium automates browsers. That's it!"
+        assert txt_h1 == expected
 
 finally:
   driver.quit()

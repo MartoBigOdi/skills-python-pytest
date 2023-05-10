@@ -13,11 +13,11 @@ import time
 chr_options = Options()
 chr_options.add_experimental_option("detach", True)
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chr_options)
-driver.get("https://the-internet.herokuapp.com/dropdown")
+driver.get("https://demo.automationtesting.in/Register.html")
 driver.maximize_window()
 
 try:
-   select_dropdown = driver.find_element(By.XPATH,'//*[@id="dropdown"]')
+   select_dropdown = driver.find_element(By.XPATH,'//*[@id="Skills"]')
    tools.highlight(select_dropdown)
    sel = Select(select_dropdown)
    # select by index
@@ -25,11 +25,11 @@ try:
    tools.highlight(select_dropdown)
    time.sleep(3)
    # select by valur
-   sel.select_by_value("2")
+   sel.select_by_value("Android")
    tools.highlight(select_dropdown)
    time.sleep(3)
    # select by visible text
-   sel.select_by_index(1)
+   sel.select_by_index(7)
    tools.highlight(select_dropdown)
 
 

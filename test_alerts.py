@@ -12,12 +12,12 @@ import time
 chr_options = Options()
 chr_options.add_experimental_option("detach", True)
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chr_options)
-driver.get("https://the-internet.herokuapp.com/javascript_alerts")
+driver.get("https://demo.automationtesting.in/Alerts.html")
 driver.maximize_window()
 
 try:
 
-    buttonAlert = driver.find_element(By.XPATH, "//button[contains(text(),'Click for JS Alert')]")
+    buttonAlert = driver.find_element(By.XPATH, "//button[@class='btn btn-danger']")
     tools.highlight(buttonAlert)
     buttonAlert.click()
     time.sleep(2)
@@ -40,7 +40,7 @@ try:
 
     @pytest.mark.alert
     def test_txt_alert():
-        expected = "I am a JS Alert"
+        expected = "I am an alert box!"
         assert txt_alert == expected
 
 finally:

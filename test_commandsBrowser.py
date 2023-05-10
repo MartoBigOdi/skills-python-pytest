@@ -10,11 +10,11 @@ import time
 chr_options = Options()
 chr_options.add_experimental_option("detach", True)
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chr_options)
-driver.get("https://the-internet.herokuapp.com/dropdown")
+driver.get("https://demo.automationtesting.in/Register.html")
 driver.maximize_window()
 
 try:
-    driver.get("https://the-internet.herokuapp.com/")
+    driver.get("https://demo.automationtesting.in/Index.html")
     time.sleep(1)
     driver.back()
     time.sleep(1)
@@ -26,7 +26,7 @@ try:
     @pytest.mark.current_url
     # validamos que la current url sea la esperada
     def test_first_url():
-        expected = "https://the-internet.herokuapp.com/dropdown"
+        expected = "https://demo.automationtesting.in/Register.html"
         assert currentUrl == expected
 
 

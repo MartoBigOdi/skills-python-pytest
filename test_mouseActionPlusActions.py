@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 import utility.tools
+import pytest
 
 
 # setting driver
@@ -15,6 +16,7 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), opti
 driver.get("https://demo.automationtesting.in/Register.html")
 driver.implicitly_wait(2)
 driver.maximize_window()
+
 
 try:
     buttonSubMit = driver.find_element(By.XPATH, "//button[@value='sign up']")
@@ -28,6 +30,7 @@ try:
     time.sleep(2)
 
 
+    @pytest.mark.hover
     def test_hover_button():
         expected = "Submit"
         assert txtButton == expected
