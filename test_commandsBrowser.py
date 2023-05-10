@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 import pytest
 import time
@@ -14,14 +15,14 @@ driver.get("https://demo.automationtesting.in/Register.html")
 driver.maximize_window()
 
 try:
-    driver.get("https://demo.automationtesting.in/Index.html")
+    buttonHome = driver.find_element(By.XPATH, "//a[contains(text(),'Hom')]")
+    buttonHome.click()
     time.sleep(1)
     driver.back()
     time.sleep(1)
+    currentUrl = driver.current_url
     driver.refresh()
     time.sleep(3)
-    currentUrl = driver.current_url
-
 
     @pytest.mark.current_url
     # validamos que la current url sea la esperada
