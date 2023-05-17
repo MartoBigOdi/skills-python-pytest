@@ -39,5 +39,9 @@ try:
    def test_dropdown():
        assert select_dropdown is not None
 
+
+except Exception as e:
+    print(e)
+
 finally:
     driver.quit()

@@ -1,5 +1,25 @@
-# Framework de Pytest-Selenium 🐍 🚀🛸 
-<img height="80" src="img_readme/pytest -selenium-python.png" width="200"/>
+# Pytest-Selenium 🐍 🚀🛸
+- Framework Front de core funcional.
+- Automatiza distintas acciones, captura datos, contempla errores, etc.
+- Sirve para tener de core inicial para pytest-selenium.
+- A toda persona que quiera empezar a automatizar con Python.
+- Compartir conocimiento y fomentar las buenas practicas.
+
+
+| Tecnologia        | Uso en el proyecto                   |
+|-------------------|--------------------------------------|
+| Python            | Lenguaje elegido                     |
+| Pytest            | Testing automatizado, test units     |
+| Selenium          | Validaciones de requirimientos de UI |
+| Pytest-html       | Genera reportes                      |
+| webdriver-manager | Installamos un driver remoto         |
+
+
+
+
+> ```
+> ⚙️ "En el repo tambien vas a encontrar archivos con herramientas basicas de python" ⚙️
+> ```
 
 > #### Requiriments.txt ‍💻
 >
@@ -26,6 +46,7 @@
 <img src="img_readme/error como se ve, solo se tiene que modificar el expected.JPG"/>
 <img src="img_readme/test skip.JPG"/>
 
+
 ## Reporte
 > ```
 > Generamos reportes con el siguiente comando, por el momento solo generamos de los test que encuentra en el archivo que le indicamos 💾
@@ -39,3 +60,9 @@
 > - Para que ejecute los test y asi mismo pytest pueda identificar el tag/mark el archivo debe tener un nombre valido.
 > - ejemplo test_elementofront.py; test_frontventa.py; test_backventa.py.
 > 
+
+# LICENCIA
+Repo con fines educativos y que se use como un core para aprender e implementar estas herramientas
+
+# Autor
+- Martin Vasconcelo

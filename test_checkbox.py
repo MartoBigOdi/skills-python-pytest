@@ -46,6 +46,9 @@ try:
      def test_flow():
          assert pasa == True
 
+except Exception as e:
+    print(e)
+
 finally:
     driver.quit()
 

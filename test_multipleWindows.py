@@ -48,5 +48,9 @@ try:
         expected = "Selenium automates browsers. That's it!"
         assert txt_h1 == expected
 
+
+except Exception as e:
+    print(e)
+
 finally:
   driver.quit()

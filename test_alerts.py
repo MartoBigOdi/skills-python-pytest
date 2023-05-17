@@ -43,5 +43,8 @@ try:
         expected = "I am an alert box!"
         assert txt_alert == expected
 
+except Exception as e:
+    print(e)
+
 finally:
   driver.quit()

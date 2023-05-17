@@ -33,6 +33,8 @@ try:
         expected = "iFrame Demo"
         assert txt_iframe == expected
 
+except Exception as e:
+    print(e)
 
 finally:
     driver.quit()

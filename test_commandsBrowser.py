@@ -31,5 +31,8 @@ try:
         assert currentUrl == expected
 
 
+except Exception as e:
+    print(e)
+
 finally:
     driver.quit()

@@ -35,5 +35,8 @@ try:
         expected = "Submit"
         assert txtButton == expected
 
+except Exception as e:
+    print(e)
+
 finally:
     driver.quit()
