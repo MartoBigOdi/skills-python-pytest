@@ -1,0 +1,5 @@
+Durazno, 3,2,1
+Manzana, 3,5,7
+Pera, 10,8,9
+Sandia, 3, 5, 6
+Limon, 1, 8, 4
